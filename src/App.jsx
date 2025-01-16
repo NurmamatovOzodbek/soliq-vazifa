@@ -1,10 +1,11 @@
 import { HomePage } from "./pages";
-import { Header } from "./components";
+import { Header, Footer } from "./components";
 function App() {
   return (
     <>
       <Header />
       <HomePage />
+      <Footer />
     </>
   );
 }

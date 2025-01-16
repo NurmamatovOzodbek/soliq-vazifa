@@ -14,18 +14,19 @@ export function PromoSection() {
       <div className="pl-[56px] pt-[56px] pb-[64px] flex flex-col items-start gap-y-[56px]">
         <div className="flex flex-col gap-y-4 items-start">
           <span className="text-[#0b244180] flex items-center gap-x-2">
-            Zamonaviy IT o'quv markazi <StarIcon />{" "}
+            22-IDUM <StarIcon />{" "}
           </span>
 
           <h1 className="text-[28px] text-[#0B2441] font-bold w-[456px]">
-            Biz sizga <span className="text-[#2189FF] ">zamonaviy kasbni</span>{" "}
-            o'rganishga va ish boshlashingizga yordam beramiz
+            Olmazor tumanidagi <span className="text-[#2189FF] ">22-sonli</span>{" "}
+            ixtisoslashtirilgan davlat umumta'lim maktabi rasmiy veb saytiga
+            xush kelibsiz
           </h1>
         </div>
         <Button
-          title="Kurslarni tanlash"
-          btnClass="py-4 px-9 rounded-[20px] bg-[#2189FF]"
-          titleClass="text-[#FFF] text-base font-medium"
+          title="Batafsil"
+          btnClass="py-4 px-9 rounded-[20px] bg-[#2189FF] text-[#FFF] hover:bg-blue-700 transition"
+          titleClass="text-base font-medium"
         />
       </div>
     </div>

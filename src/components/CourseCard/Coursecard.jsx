@@ -2,19 +2,19 @@ import { Button } from "../Button/Button";
 import ArrowRightIcon from "../../assets/icons/arrow-right-icon.svg";
 import DasturlashBg from "../../assets/images/dasturlash.png";
 
-export function CourseCard({width}) {
+export function CourseCard({ cardBgImage, title, link }) {
   return (
     <div
-      className={`pl-[32px] pb-[32px] w-[${width}] h-[273px] flex items-end`}
+      className="pl-[32px] pb-[32px] h-[300px] flex items-end rounded-[44px] bg-cover bg-center"
       style={{
-        backgroundImage: `url(${DasturlashBg})`,
+        backgroundImage: `url(${cardBgImage})`,
         // backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundSize:"cover"
+        backgroundSize: "cover",
       }}
     >
       <div className="flex flex-col gap-y-[20px] items-start">
-        <strong className="text-white font-bold text-2xl">Dasturlash</strong>
+        <strong className="text-white font-bold text-2xl">{title}</strong>
         <Button
           title="Batafsil"
           icon={<ArrowRightIcon />}

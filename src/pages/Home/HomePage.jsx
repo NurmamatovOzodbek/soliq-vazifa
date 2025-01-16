@@ -1,15 +1,29 @@
-// import { Courses } from "./components";
-import { PromoSection, Courses } from "./components";
+import { useEffect, useState } from "react";
+import { apiClients } from "../../services/ApiClient";
+import {
+  PromoSection,
+  Courses,
+  TeacherSection,
+  News,
+  FAQ,
+  ContactSection,
+} from "./components";
 export function HomePage() {
+  const { getFetch } = apiClients;
+  const [teachers, setTeachers] = useState([]);
+  // useEffect(() => {
+  //   getFetch("teachers")
+  //     .then((res) => console.log(res))
+  //     .catch((err) => console.log(err));
+  // }, []);
   return (
-    <main className="flex flex-col gap-y-[80px]">
+    <main className="flex flex-col gap-y-[80px] pb-[80px]">
       <PromoSection />
-      <section className="container flex flex-col gap-y-[32px]">
-        <h2 className="leading-[44px] text-[28px] text-[#0B2441] font-bold">
-          Biz o'rgatadigan kurslar
-        </h2>
-        <Courses />
-      </section>
+      <Courses />
+      <TeacherSection />
+      <News />
+      <FAQ />
+      <ContactSection />
     </main>
   );
 }
