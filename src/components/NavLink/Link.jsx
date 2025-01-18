@@ -3,17 +3,17 @@ const navLinks = [
   {
     id: 1,
     title: "Biz haqimizda",
-    linkUrl: "teacher",
+    linkUrl: "about-us",
   },
   {
     id: 2,
     title: "Bizning ustozlarimiz",
-    linkUrl: "about-us",
+    linkUrl: "teachers",
   },
   {
     id: 3,
     title: "Aloqa",
-    linkUrl: "about-us",
+    linkUrl: "contact",
   },
 ];
 export function Links() {

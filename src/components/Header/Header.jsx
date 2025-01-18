@@ -18,7 +18,7 @@ export function Header() {
         </div> */}
         <Links />
         <div className="flex items-center gap-x-6">
-          <LanguageBtn />
+          {/* <LanguageBtn /> */}
           <Button
             title="+998 91 7775411"
             icon={<CallIcon />}

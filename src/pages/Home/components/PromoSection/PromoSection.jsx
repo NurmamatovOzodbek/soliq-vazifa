@@ -1,6 +1,7 @@
 import StarIcon from "../../../../assets/icons/star-icon.svg";
 import BgImage from "../../../../assets/images/promoSectionBg.png";
 import { Button } from "../../../../components/Button/Button";
+import { Link } from "react-router-dom";
 export function PromoSection() {
   return (
     <div
@@ -23,11 +24,12 @@ export function PromoSection() {
             xush kelibsiz
           </h1>
         </div>
-        <Button
-          title="Batafsil"
-          btnClass="py-4 px-9 rounded-[20px] bg-[#2189FF] text-[#FFF] hover:bg-blue-700 transition"
-          titleClass="text-base font-medium"
-        />
+        <Link
+          to="about-us"
+          className="py-4 px-9 rounded-[20px] bg-[#2189FF] text-[#FFF] hover:bg-blue-700 transition"
+        >
+          Batafsil
+        </Link>
       </div>
     </div>
   );

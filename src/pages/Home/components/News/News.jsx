@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const newsData = [
   {
     id: 1,
+    category: "local",
     title: "Lorem ipsum",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum recusandae architecto delectus, perspiciatis omnis fugit earum...",
@@ -11,6 +12,7 @@ const newsData = [
   },
   {
     id: 2,
+    category: "global",
     title: "Lorem ipsum",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat laborum recusandae architecto delectus, perspiciatis omnis fugit earum...",
@@ -33,7 +35,7 @@ export function News() {
       </div>
       <div className="grid grid-cols-2 gap-4">
         {newsData.map((news) => {
-          const { id, title, description, image } = news;
+          const { id, title, description, image, category } = news;
           let directionCol = "";
           id % 2 === 0
             ? (directionCol = "flex-col-reverse")
@@ -45,6 +47,7 @@ export function News() {
               description={description}
               image={image}
               directionCol={directionCol}
+              category={category}
             />
           );
         })}
